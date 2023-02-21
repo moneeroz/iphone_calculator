@@ -1,0 +1,87 @@
+/* CSS Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+/* Calculator section style */
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  padding: 20px;
+  padding-top: 75px;
+  background-color: black;
+  border-radius: 25px;
+}
+
+/* Calculator screen style */
+.calcScreen {
+  width: 100%;
+  height: 100px;
+  font-size: 6rem;
+  text-align: right;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  
+  padding-right: 35px;
+}
+
+/* Calculator buttons section style */
+.calcButtons {
+  display: flex;
+  /* justify-content: space-between; */
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  padding: 15px;
+  padding-bottom: 5px;
+
+}
+
+
+#lastBtnRow {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 2fr 1fr 1fr;
+  width: 100%;
+}
+/* Calculator individual button style */
+button {
+  height: 60px;
+  background-color: rgb(51, 51, 51);
+  border: none;
+  border-radius: 50%;
+  font-size: 4rem;
+  /* font-weight: bold; */
+  color: rgb(255, 255, 255);
+  margin: 7px;
+  padding: 7px;
+  flex: 1 0 18%;
+}
+
+.lightGrayBtn {
+  background-color: rgb(165, 165, 165);
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+}
+
+.orangeBtn {
+  background-color: rgb(254, 159, 10);
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+}
+
+.bigBtn {
+  border-radius: 1em;
+}
+
+button:hover {
+  background-color: #a8a5a5;
+}
