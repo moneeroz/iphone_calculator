@@ -80,6 +80,8 @@ button {
 
 .bigBtn {
   border-radius: 1em;
+  text-align: left;
+  padding-left: 22px;
 }
 
 button:hover {
